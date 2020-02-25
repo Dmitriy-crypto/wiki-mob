@@ -12,7 +12,7 @@ public class LoginTest extends TestBase {
         app.getSession().tapMenuButton();
         app.getSession().pause(3000);
         app.getSession().tapLogIntoWiki();
-        app.getSession().fillLogInForm(new User().withUsername("matvey.telran").withPassword("a0Z7%0F5"));
+        app.getSession().fillLogInForm(new User().withUsername("matvey.telran").withPassword("a0Z70F56"));
         app.getSession().pause(3000);
         app.getSession().tapLogIn();
         app.getSession().pause(3000);

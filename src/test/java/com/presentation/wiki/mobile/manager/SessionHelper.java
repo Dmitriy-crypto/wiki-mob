@@ -13,7 +13,11 @@ public class SessionHelper extends HelperBase {
     public void fillLogInForm(User user) throws InterruptedException {
         type(By.id("login_username_text"), user.getUsername());
         pause(3000);
-        //type(By.xpath("@resource-id=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/TextInputLayout[2]/android.widget.FrameLayout/android.widget.EditText"), user.getPassword());
+        type(By.id("login_password_input"), user.getPassword());
+        pause(3000);
+
+
+
     }
     public void tapMenuButton(){
         tap(By.id("menu_overflow_button"));
